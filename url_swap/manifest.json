@@ -1,0 +1,12 @@
+{
+    "name": "京东移动URL自动跳转为PC端URL",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "在桌面电脑上，打开移动端分享的URL，自动跳转到PC端URL",    
+    "content_scripts": [
+    	{
+    		"matches": ["https://item.m.jd.com/product/*"],
+    		"js": ["url_swap.user.js"]
+    	}
+	]
+}	
